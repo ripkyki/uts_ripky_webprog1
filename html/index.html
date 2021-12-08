@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- deskripsi web -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulinkuy</title>
+    <!-- css yang dipakai -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- heaer aplikasi -->
+    <header>
+        <nav>
+            <ul>
+                <li><img onclick="closeContent()" src="/assets/asset/logo.svg" class="logo" alt=""></li>
+                <li><a onclick="openModal()" href="#" id="login" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- background -->
+        <img class="vector" src="/assets/asset/vector kuning background.svg" alt="">
+        <div class="main-section " id="landingPage">
+
+            <!-- hero -->
+            <div class="cover">
+                <div class="cover-text">
+                    <h1 class="heading-2">BEST DESTINATIONS AROUND THE WORLD</h1>
+                    <h1 class="heading-1">find<br> your travel <br>destination now</h1>
+                    <p class="heading-3">
+                        Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed
+                        listening. Park gate sell they west hard for the.
+                    </p>
+                    <img src="/assets/asset/jalma.svg" alt="">
+                    <a onclick="targetButton()" href="#destination" id="find" class="find-btn">Find out more</a>
+                </div>
+            </div>
+            <!-- product -->
+            <div class="destination">
+                <div class="destination-title">
+                    <h1 id="destination">Top Destinations</h1>
+                </div>
+                <div class="destination-card-container">
+                    <div onclick="openContent()" class="destination-card">
+                        <img src="/assets/asset/gbr_roma.svg" class="destination-img" alt="">
+                        <div class="destination-text">
+                            <h1>Rome, Italy</h1>
+                            <div class="destination-count">
+                                <img src="/assets/asset/ic_send.svg" alt="">
+                                <p>20 Destinations</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div onclick="openContent()" class="destination-card">
+                        <img src="/assets/asset/gbr london.svg" class="destination-img" alt="">
+                        <div class="destination-text">
+                            <h1>London, UK</h1>
+                            <div class="destination-count">
+                                <img src="/assets/asset/ic_send.svg" alt="">
+                                <p>28 Destinations</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div onclick="openContent()" class="destination-card">
+                        <img src="/assets/asset/gbr london.svg" class="destination-img" alt="">
+                        <div class="destination-text">
+                            <h1>London, UK</h1>
+                            <div class="destination-count">
+                                <img src="/assets/asset/ic_send.svg" alt="">
+                                <p>28 Destinations</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-section  hidden" id="content">
+            <img src="/assets/asset/gbr_usa doct.png" alt="">
+            <div class="content-description">
+                <h1>USA</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores incidunt deleniti provident magni
+                    numquam unde iste ipsa magnam porro illo nulla quo ex ullam quae, ducimus excepturi veritatis modi
+                    nesciunt inventore accusamus amet? Pariatur, ratione labore ipsa repellendus, esse ut fugit officia
+                    libero minima iste, aliquid laudantium dolore assumenda hic. Adipisci similique, quas ipsum
+                    molestiae nam enim eum earum, deserunt deleniti officia ut incidunt fuga dolor itaque, harum totam
+                    quaerat animi ratione sed illum iste perferendis fugit veniam esse! Alias veniam, ullam eum officia
+                    architecto voluptatem impedit laboriosam velit dignissimos. Inventore officia at iusto iure nulla
+                    dolorum quisquam? Voluptatum numquam facilis quas quia error deleniti mollitia assumenda quasi
+                    tempore tenetur nihil ad, nisi amet! Fuga odio, earum in nulla esse mollitia ducimus quisquam
+                    incidunt corrupti dolor ut velit ipsa repellat quo cumque totam quibusdam nisi voluptatibus.
+                    Perspiciatis, dolorem rerum? Voluptate neque fugit omnis aut odio fuga minima quis obcaecati beatae
+                    excepturi blanditiis eos cumque modi pariatur quae maxime ex odit voluptatibus consequatur quasi in
+                    exercitationem dignissimos, nisi laudantium. Placeat impedit temporibus nisi magni provident,
+                    suscipit molestias maxime cupiditate fuga quibusdam eum. Veritatis fuga sunt quia, similique
+                    adipisci dolore temporibus nesciunt rerum id aspernatur impedit quaerat distinctio harum maxime
+                    voluptates? Autem.</p>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="company-id">
+            <div class="company-quotes">
+                <h1>Ulinkuy.</h1>
+                <p>Search your trip, get full control for much longer.</p>
+            </div>
+            <div class="company-about">
+                <br>
+                <h1 class="company-name">Company</h1>
+                <ul>
+                    <li><a href="https://ripky.000webhostapp.com/">About</a></li>
+                    <li><a href="https://www.instagram.com/ripky_/">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <h1>All rights reversed@ripky2021</h1>
+        </div>
+    </footer>
+
+    <div id="login-container" class="login-container hidden">
+        <div class="login-form ">
+            <div class="header-form">
+                <img onclick="closeModal()" src="/assets/asset/cancel.png" class="close-btn" alt="">
+                <h1>Sign In or Sign Up</h1>
+            </div>
+            <div class="body-form">
+                <h1 class="body-title">Welcome to Ulinkuy</h1>
+                <input type="text" placeholder="Your phone number">
+                <a onclick="closeModal()" href="#">Continue</a>
+                <h1 class="or">Or</h1>
+                <div onclick="closeModal()" class="social-btn google">
+                    <img src="/assets/asset/ic_google.svg" alt="">
+                    <h1>Continue with Google</h1>
+                </div>
+                <div onclick="closeModal()" class="social-btn facebook">
+                    <img src="/assets/asset/ic_facebook.svg" alt="">
+                    <h1>Continue with Facebook</h1>
+                </div>
+                <div onclick="closeModal()" class="social-btn apple">
+                    <img src="/assets/asset/ic_apple.svg" alt="">
+                    <h1>Continue with Apple</h1>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
